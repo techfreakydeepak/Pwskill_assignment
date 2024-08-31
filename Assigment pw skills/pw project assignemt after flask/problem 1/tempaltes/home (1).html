@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Scraping App</title>
+</head>
+<body>
+    <h1>YouTube Data:</h1>
+    <ul>
+        {% for video in youtube_data %}
+            <li>{{ video }}</li>
+        {% endfor %}
+    </ul>
+
+    <h1>Amazon Data:</h1>
+    <ul>
+        {% for product in amazon_data %}
+            <li>{{ product }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
